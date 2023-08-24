@@ -4,28 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuenta</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <h1>Mi Cuenta</h1>
+    <header class="cabeza"> 
+        <div class="cabeza__logo">
+            <img class="cabeza__logo__img" src="src/img/logo.png"alt="">
+        </div>
+        <nav class="cabeza__op">
+            <a class="menu__opciones" href="index.html">Inicio</a>
+            <a class="menu__opciones" href="safari.html">Safari</a>
+            <a class="menu__opciones" href="transferencias.html">Transferencias</a>
+            <a class="menu__opciones" href="fauna.html">Fauna Silvestre</a>
+            <a class="menu__opciones" href="destinos.html">Destinos</a>
+            <a class="menu__opciones" href="contactenos.html">Contactenos</a>
+            <a class="menu__opciones" href="cuenta.html">Mi Cuenta</a>
+        </nav>
+    </header>
+    
     <section>
+        <h1 class="section__linea"></h1>
+        <h1 class="section__titulo__contacto">Mi Cuenta</h1>
         <form action="/my-handling-form-page" method="post">
-            <ul>
-                <li>
-                  <label for="name">Nombre de usuario o correro electronico:</label>
-                  <input type="text" id="name" name="user_name" />
-                </li>
-                <li>
-                  <label for="mail">Contraseña:</label>
-                  <input type="email" id="mail" name="user_mail" />
-                </li>
-               <li>
-                    <textarea id="msg" name="user_message"></textarea>
-               </li>
-                <li class="button">
-                    <button type="submit">Crear cuenta</button>
-                </li>
-            </ul>
-        </form>
+            <div class="coment">
+              <label class="contenido__subtitulo" for="name">Correo electronico:</label>
+              <input type="text" id="name" name="user_name" />
+              <label class="contenido__subtitulo" for="msg">Contraseña:</label>
+              <textarea id="msg" name="user_message"></textarea>
+              <div class="boton">
+                <button class="boton__enviar" type="submit">Crear cuenta</button>
+              </div>
+            </div>
+          </form>
     </section> 
+    <footer class="abajo">
+        <h4 class="abajo__subtitulo">Redes sociales:</h4>
+        <div class="links">
+          <a href="https://github.com/ManuelChorolque"><img class="instagram" src="src/img/instagram.png" alt=""></a>
+          <a href="https://github.com/ManuelChorolque"><img class="facebook" src="src/img/facebook.png" alt=""></a>
+          <a href="https://github.com/ManuelChorolque"><img class="youtube" src="src/img/youtube.png" alt=""></a>
+          <a href="https://github.com/ManuelChorolque"><img class="twitter" src="src/img/twitter1.png" alt=""></a>
+        </div>
+      </footer>
 </body>
 </html>
